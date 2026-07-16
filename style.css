@@ -1,0 +1,378 @@
+/* =========================
+   ページ全体の基本設定
+========================= */
+body {
+    font-family: sans-serif; /* フォント設定 */
+    margin: 0; /* 外側の余白を削除 */
+    background-color: #f5f5f5; /* 背景色 */
+}
+
+
+/* =========================
+   ヘッダー部分
+   <header>
+========================= */
+header {
+    background-color: #22222a; /* ヘッダー背景 */
+    color: white; /* 文字色 */
+    padding: 15px; /* 内側余白 */
+    text-align: center; /* 中央寄せ */
+}
+
+
+
+
+/* =========================
+   ナビゲーションメニュー
+   <nav>
+========================= */
+
+/* ul（リスト全体） */
+nav ul {
+    list-style: none; /* ・を消す */
+    padding: 0;
+    display: flex; /* 横並び */
+    gap: 15px; /* メニュー間の余白 */
+}
+
+/* リンク文字 */
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* 下線を消す */
+}
+
+
+/* =========================
+   メインコンテンツ
+   <main>
+========================= */
+main {
+    padding: 20px; /* 内側余白 */
+    background: rgb(248, 248, 248); /* 背景色 */
+    max-width: 800px; /* 最大幅 */
+    margin: 20px auto; /* 中央配置 */
+}
+/* =========================
+   見出し h1
+   主にタイトル用
+========================= */
+h1 {
+    background-color: #22222a;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+
+/* =========================
+   段落テキスト
+   <p>
+========================= */
+p {
+    text-align: center;
+}
+
+
+/* =========================
+   見出し h2
+   セクションタイトル用
+========================= */
+h2 {
+    background-color: #22222a;
+    padding: 10px;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+
+
+
+/* =========================
+   見出し h3
+   小見出し用
+========================= */
+h3 {
+    background-color: #2a2a36;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+
+/* =========================
+   フッター部分
+   <footer>
+========================= */
+
+/* =========================
+   目次ボックス
+========================= */
+
+.table_of_contents {
+
+    background-color: white;
+
+    border: 2px solid #303098;
+
+    padding: 20px;
+
+    margin-bottom: 40px;
+}
+
+
+/* 目次タイトル */
+.table_of_contents h2 {
+
+    margin-top: 0;
+}
+
+
+/* 目次リスト */
+.table_of_contents ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+
+/* 目次項目 */
+.table_of_contents li {
+
+    background-color: #3f3fc6;
+
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+
+/* 目次リンク */
+.table_of_contents a {
+
+    color: white;
+
+    text-decoration: none;
+
+    display: block;
+}
+
+
+/* マウスを乗せた時 */
+.table_of_contents li:hover {
+
+    background-color: #3f9ef0;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+
+/*　チャプター目次部分 */
+.table_of_contents li  {
+    background-color: #4c22c0; /* ヘッダー背景 */
+    color: white; /* 文字色 */
+    text-align: center; /* 中央寄せ */
+}
+/*チャプター目次部分のマウスを乗せたとき*/
+li:hover {
+
+    background-color: #183bea;
+}
+/*折り畳み*/
+summary{
+  background-color: #525252;
+
+  color: rgb(255, 255, 255); /* 文字色 */
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+   
+}
+
+/*折り畳み部分のマウスを乗せたとき*/
+summary:hover
+{
+background-color: #000000; /* ヘッダー背景 */
+}
+
+/*画像挿入用　imgで画像を入れるときは必ずtableとtdで囲うように*/
+
+
+
+
+.portfolio_item {
+    margin: auto;
+    text-align: center;
+}
+
+.portfolio_item td{
+
+     background-color: #525252;
+
+      margin: auto;
+      text-align: center;
+}
+
+table {
+
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    
+}
+
+
+/* =========================
+   掲示板フォーム
+========================= */
+.bbs_form_section {
+
+    margin-bottom: 80px;
+}
+
+
+/* フォーム全体 */
+.bbs_form {
+
+    background-color: #f0f0f0;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* 入力欄グループ */
+.form_group {
+
+    margin-bottom: 25px;
+}
+
+
+/* ラベル */
+.form_group label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+
+/* テキスト入力 */
+.form_group input[type="text"] {
+
+    width: 100%;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* テキストエリア */
+.form_group textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    resize: vertical;
+
+    box-sizing: border-box;
+}
+
+
+/* 画像選択 */
+.form_group input[type="file"] {
+
+    margin-top: 10px;
+}
+
+
+/* 投稿ボタン */
+.submit_button {
+
+    text-align: center;
+}
+
+
+.submit_button button {
+
+    background-color: #303098;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 40px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.submit_button button:hover {
+
+    background-color: #4a4ad8;
+}
+
+
+/* =========================
+   投稿一覧
+========================= */
+.bbs_post {
+
+    background-color: #f8f8f8;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    border-left: 8px solid #303098;
+}
+
+
+/* 投稿ヘッダー */
+.post_header {
+
+    margin-bottom: 15px;
+}
+
+
+/* 投稿者 */
+.post_user {
+
+    font-size: 14px;
+
+    color: #555555;
+}
+
+
+/* 投稿画像 */
+.post_image {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+.post_image img {
+
+    max-width: 100%;
+
+    border: 2px solid #cccccc;
+}
