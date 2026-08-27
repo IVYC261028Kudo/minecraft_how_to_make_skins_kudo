@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <!-- =========================
+         基本設定
+    ========================== -->
+    <meta charset="UTF-8">
+
+    <title>
+        掲示板 | Minecraftスキン作成講座
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         ヘッダー
+    ========================== -->
+    <header>
+
+        <h1>
+            Minecraftスキン作成講座
+        </h1>
+
+    </header>
+
+
+    <!-- =========================
+         メイン
+    ========================== -->
+    <main>
+
+        <!-- =========================
+             ページタイトル
+        ========================== -->
+        <section class="page_title">
+
+            <h2>
+                掲示板
+            </h2>
+
+            <p>
+                制作したスキンの投稿や、
+                質問などにご利用ください。
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             投稿フォーム
+        ========================== -->
+        <section class="bbs_form_section">
+
+            <h3>
+                新規投稿
+            </h3>
+
+            <form class="bbs_form">
+
+                <!-- 名前 -->
+                <div class="form_group">
+
+                    <label for="user_name">
+                        名前
+                    </label>
+
+                    <input type="text"
+                           id="user_name"
+                           name="user_name"
+                           placeholder="名前を入力">
+
+                </div>
+
+
+                <!-- タイトル -->
+                <div class="form_group">
+
+                    <label for="post_title">
+                        タイトル
+                    </label>
+
+                    <input type="text"
+                           id="post_title"
+                           name="post_title"
+                           placeholder="タイトルを入力">
+
+                </div>
+
+
+                <!-- 本文 -->
+                <div class="form_group">
+
+                    <label for="post_text">
+                        本文
+                    </label>
+
+                    <textarea id="post_text"
+                              name="post_text"
+                              rows="8"
+                              placeholder="内容を入力"></textarea>
+
+                </div>
+
+
+                <!-- 画像 -->
+                <div class="form_group">
+
+                    <label for="post_image">
+                        画像添付
+                    </label>
+
+                    <input type="file"
+                           id="post_image"
+                           name="post_image"
+                           accept="image/*">
+
+                </div>
+
+
+                <!-- 投稿ボタン -->
+                <div class="submit_button">
+
+                    <button type="submit">
+                        投稿する
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             投稿一覧
+        ========================== -->
+        <section class="bbs_post_section">
+
+            <h3>
+                投稿一覧
+            </h3>
+
+            <form
+            class = "bbs_form"
+            
+            action="post.php"></form>
+           
+
+        <!-- =========================
+             チャプター一覧
+        ========================== -->
+          <div class="table_of_contents" id="Chapter_list">
+
+            <h2>チャプターリスト</h2>
+
+            <li>
+                <a href="Minecraft_how_to_make_skins.html">
+                    <strong>はじめに</strong>
+                </a>
+            </li>
+
+            <li>
+                <a href="chapter/chapter01.html">
+                   <strong>Chapter.01.基本操作</strong> 
+                </a>
+            </li>
+
+            <li>
+                <a href="chapter/chapter02.html">
+                    <strong>Chapter02.制作に入る前に知っておいてほしいこと</strong>
+                </a>
+            </li>
+<details>
+    <summary><strong>Chapter03～ 制作課題シリーズ</strong></summary>
+    
+  <li>
+                <a href="">
+                    <strong>Chapter03.【難易度★】アマテ・ユズリハ編(未完成)</strong>
+                </a>
+                
+            </li>
+            <li>
+                <a href="">
+                    <strong>Chapter04.Coming_soon</strong>
+                </a>
+                
+            </li>
+</details>
+          
+
+            <li>
+
+                <a href="contact.html">
+                    <strong>お問い合わせ・質問</strong>
+                </a>
+
+            </li>
+
+        </div>
+    </main>
+
+
+    <!-- =========================
+         フッター
+    ========================== -->
+    <footer>
+
+        <p>
+            &copy; 2026 Minecraft Skin Guide
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
